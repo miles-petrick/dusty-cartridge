@@ -1,5 +1,118 @@
 /* Navigation styles */
-
+.logo {
+    background: white;
+    height: 230px;
+    background-image: url("https://lh3.googleusercontent.com/0J7yN4VeAsI8A7_RHi8BZisu9zA3m1S-blD61VlMTeB1v3pzaBU92N3tzb0J64qAxr0w5NtN6bQBtmST6v1bnGsz8FGqCqA9vnlNhdbyBWVRQ1dmS8y8ZurIYv9Nv8dWX9UCajNUGQ=w2400");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+}
+.left, .right, .center {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left, .right {
+    width: 25%;
+}
+.center {
+    width: 50%;
+}
+.center a {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial;
+}
+.button {
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+}
+.right button {
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+}
+.left button {
+    background-color: skyblue;
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+}
 /* Column styles */
-
+.column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.meal1, .meal2, .meal3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.meal1 {
+    margin-top: 20px;
+    background-image: url("https://lh3.googleusercontent.com/QFNc0RpufZIe0scJ0335WJyGB9VWSJpk03oht1nVVnsK8fl92d0LWosjhLxx5pU5CvEZIWIIzkY_ahDMtZKTK_zS5_G-JmYsmxTDBcz-7yP0Vls9nYjdCs-ovSLwTnjgG7j2pYariQ=w2400")
+}
+.meal2 {
+    margin-top: 20px;
+    background-image: url("https://lh3.googleusercontent.com/o-WONxUgEYy_t8nE7miVaQymzlPysa6LK_-qV3_eDKpd0MF60oCY_9XKeKQ5Ulr6y_rGe5JhJFwhUEaI06eB-m-QGVK5KiWupxdgV6hLO7GSq2PNKqNy76uJgtDiXyYNXnX9o3SZQg=w2400")
+}
+.meal3 {
+    margin-top: 20px;
+    background-image: url("https://lh3.googleusercontent.com/ChfcQZSU5JUXkdJ6NwRx96oIUUnxrHjFzo21QydQUUiLPAnSX3BlbN6AApvdAsQELG7BKwh_6GceBSkXvCE0FGX4DdsqI25blzjM3pfdvB5bWQHpFdPUvArnpj_xuEKmNxtwiQng0g=w2400")
+}
+.text {
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+.text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* Footer Styles */
+.footer {
+    display: flex;
+    background-color: black;
+    padding: 20px 40px;
+    justify-content: center;
+    align-content: center;
+}
+.footer a {
+    padding: 20px 40px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fb {
+    color: skyblue;
+}
+.tw {
+    color: yellow;
+}
+.ig {
+    color: red;
+}
+
