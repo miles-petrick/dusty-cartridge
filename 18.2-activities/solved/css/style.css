@@ -35,7 +35,7 @@ body {
 
 #headline {
   background-color: rgba(255,255,255,0.8);
-  border-bottom: 5px solid #FF6200;
+  border-bottom: 5px #FF6200;
   position: absolute;
   right: -50px;
   top: 100px;

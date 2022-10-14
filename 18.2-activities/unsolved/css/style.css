@@ -4,12 +4,119 @@ body {
 
 /* Grid CSS */
 
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: 
+  "featuredProduct secondaryProduct" 
+  "featuredProduct CTA";
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url("https://lh3.googleusercontent.com/G1skBqp4N1gRwtzflRuieUsLu9wD7RwLMjwaXCA0LNKRu4l3CRAUggU6wmQMKyZrvvriwIOmhaQebHNSUSrZirFP8B9BQ6saXRDZpCM3nGPnD5eSM2zYW5MhNVVhfnDej6dvXmrMLQ=w2400")
+}
+
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url("https://lh3.googleusercontent.com/pL1BSQOtnEo-ppX4X6r90QWuEcCfzq7BbqUzyIxIoqS9jMvxfvx7PAY8VSZgNkFQlz1kA4RSr6ZWkWC0MPC4zQLo_WEmM7ejA7XG8mdnEt5s7JL50Bhzi7_hQPAfJ06g0wc_3HxpRg=w2400")
+}
+
+#CTA {
+  grid-area: CTA;
+  background-image: url("https://lh3.googleusercontent.com/cyj3OwxfKiAeN-t7gWrxmBQuJodt780CmsIr-nqAXdOx8qgccSMCUgkYdHFjpOE32ZHlL66bdUQWnbwFqckGuN6yeUCteXMwW-9J1phE775rD_Sx9a1VZacLoGKXsw9FhugS2LFqeQ=w2400");
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid #ff6200;
+  position: absolute;
+  right: -50px;
+  top: 140px;
+  padding: 25px;
+  max-width: 600px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
 
 /* Category Grid CSS */
 
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "bookcases bedroom patio"
+  "couches couches patio"
+  "desks desks desks";
+}
+
+#bookcases {
+  grid-area: bookcases;
+  background-image: url("https://lh3.googleusercontent.com/44hTjLCOx4XnwLkGKgzCzkqJR4H9F9XX4ta-_v9GP8yE01C1PgijPKaFJkhoi-midcl564aPkDrr9VVw0F1yKBKntsQwbdjUyBfTivV3e-jqNN6ti_y48o0XROY1uyWe35qh6Y8P3Q=w2400")
+}
+
+#bedroom {
+  grid-area: bedroom;
+  background-image: url("https://lh3.googleusercontent.com/5BCJSwZSY8ASaQtph9xCpxXNrDL8kYjhzOFqJ5gjdlcDscHx_Fyxaca1vDtIGoBnfClN5VFV2qPBLqREcYcc7_FwsEjPZi8yAlPaM_n-AIk6AEC7DQY6kt6zIAI4_t3LmCZsR10ydQ=w2400")
+}
 
 
+#couches {
+  grid-area: couches;
+  background-image: url("https://lh3.googleusercontent.com/jmuGVds8CB4q2OdlSHkmI3qbiLkiEuqi74oXTHB-h3e0L8fuc8Oz_J5OntxWf5gIWXC6JoRMYVWYNb2cU8hGNGtzewmlYY-WLwcrl2iK5o_cmgICdB7w8SmyVbsDWvntfEUcOyUzXQ=w2400")
+}
 
+#patio {
+  grid-area: patio;
+  background-image: url("https://lh3.googleusercontent.com/AeOcmBMDz2Tji0wTFpdpDKw3ZhYP4AX9UTnNBTD6_vDt37V7YeLZHB0jeYgjZe7MPYg-mi31a4D6NCRfSWOx_WeX-FdahinhoxLgMHegyx8tHziRC3-nVXgnf3AAJkY2VVhhk--qfg=w2400")
+}
+
+#desks {
+  grid-area: desks;
+  background-image: url("https://lh3.googleusercontent.com/n9Nw9QFbsAjcW_yGGgo55i1IoW-7STTOYDiU6b1yexbfdryaJchV32y3IZsiZkXfKsgsCTwCiUJocSGUCwPXYlK1rEISLPFYf-nzTgkZDpSEkBVrQ9VIL9ruOp_JE6sOqEP4Z8ZjvQ=w2400")
+}
+
+.categoryGrids {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #ff6200;
+}
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
