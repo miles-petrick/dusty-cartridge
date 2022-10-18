@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -11,38 +12,43 @@ body {
   "translate"
   ;
 }
+
 .rotate {
   grid-area: rotate;
   text-align: center;
 }
-.rotate img {
-/* Write your rotate transform here */
+
+.rotateMe {
+  transform: rotate(180deg);
 }
+
 .scale {
   grid-area: scale;
   justify-content: center;
   display: grid;
   align-items: center;
 }
+
 .scaleMe {
   width: 50px;
   height: 50px;
   background-color: red;
   margin: 0 auto;
-  /* Write the scale transform here */
-
+  transform: scale(5, 5);
 }
+
 .translate {
   grid-area: translate;
   justify-content: center;
   display: grid;
   align-items: center;
 }
+
 .moveMe {
   width: 100px;
   height: 100px;
   background-color: blue;
-  /* Write the translate transform here */
+  transform: translate(0%, -330%);
 }
 
 .gridChild {

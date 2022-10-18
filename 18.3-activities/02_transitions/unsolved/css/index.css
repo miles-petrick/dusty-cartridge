@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
@@ -12,18 +12,74 @@
   ;
   height: 500px;
 }
-.hoverMe {
+.hoverMe01 {
   grid-area: hover;
-  background-color: red;
+  background-color: orangered;
   color: white;
-  width: 150px;
+  width: 300px;
+  text-align: center;
+  height: 150px;
+  transition: all 0.3s ease;
+}
+.hoverMe01:hover {
+  background-color: blue;
+  color: white;
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: orangered;
+}
+.hoverMe02 {
+  grid-area: hover;
+  background-color: orangered;
+  color: white;
+  width: 100px;
   text-align: center;
   height: 50px;
-  /* Add the css property transition here! */
-
+  transition: 0.3s;
 }
-/* active state */
-.hoverMe:hover {
-  /* Add your hover state css here. */
-
+.hoverMe02:hover {
+  background-color: blue;
+  color: white;
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: orangered;
+}
+.hoverMe03 {
+  grid-area: hover;
+  background-color: orangered;
+  color: white;
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  transition: 0.3s;
+}
+.hoverMe03:hover {
+  transform: translate(-5px, -5px);
+  background-color: blue;
+  border-style: solid;
+  border-width: 2px;
+  border-color: orangered;
+  filter: drop-shadow(5px 5px 0px black)
+}
+.hoverMe04 {
+  grid-area: hover;
+  background-color: orangered;
+  color: white;
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  transition: 0.3s;
+}
+.hoverMe04:hover {
+  transform: translate(-5px, -5px);
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  filter: drop-shadow(5px 5px 0px blue);
 }
