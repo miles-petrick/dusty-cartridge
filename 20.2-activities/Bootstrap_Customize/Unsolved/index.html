@@ -9,93 +9,96 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>Our Custom Template</title>
   </head>
   <body>
 
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+      <a class="navbar-brand" href="#"><img src="https://lh3.googleusercontent.com/Bm9UpEwFTy8HqtFOcjp7dlFaV8CB6WOViWUm6uFdKPK0YI9J4hfaJmPmvj1ufWSG1sEcxKJYvkUUSVxClpZL-NIrEMBwGGx1HrnHprQXetNB_Vm_xglO73xxaa3q6IFBTWpYDy5DzA=s64-p-k"> Rock Nation </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Venues <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Artist</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              Dropdown
+              Near You
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Venues</a>
+              <a class="dropdown-item" href="#">Artists</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Upcoming Acts</a>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-lg navCTA" href="#" role="button">Buy Tickets</a>
+          </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
     <!-- End navigation bar -->
 
     <!-- Jumbotron -->
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="jumbotron rocBackground">
+      <div class="jumboCopy">
+        <h1 class="display-4">Its Time to Rock!</h1>
+         <p class="lead">Rock Nation brings you the most headbanging shows on the planet. Click below to find tickets for your favorite bands.</p>
+         <hr class="my-4">
+         <a class="btn btn-primary btn-lg" href="#" role="button">Buy Tickets</a>
+      </div>
     </div>
     <!-- End jumbotron -->
 
     <!-- Cards -->
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid content">
+      <h2 class="sectionHeading">Shows Near You</h2>
+      <div class="row showsNear">
         <!-- Card 1 -->
-        <div class="cardContainer col-lg-3 col-md-3 col-sm-6">
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
           <div class="card">
-            <img src="images/1_card.png" class="card-img-top" alt="...">
+            <img src="https://lh3.googleusercontent.com/NF1EvsAMq-ukmpe70FfpW9OlgJ5vCdI1xlmrm518ehV434fnCdm-gnKWPTb3h9OezkbDJmAnvFVHkIYZPUumWRflkL7S3NAXRmBxKopZRTn5z6606rfAbydSlGi25eWhIt8mb-AbjA=w2400" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Melbourne, Australia</h5>
+              <p class="card-text">Come see SLipknot unlease their new album "We Are Not Your Kind"</p>
+              <a href="#" class="btn btn-primary">Buy Tickets</a>
             </div>
           </div>
         </div>
         <!-- End card 1 -->
 
         <!-- Card 2 -->
-        <div class="cardContainer col-lg-3 col-md-3 col-sm-6">
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
           <div class="card">
-            <img src="images/2_card.png" class="card-img-top" alt="...">
+            <img src="https://lh3.googleusercontent.com/vSWI2ceIfBIAy-r_jW1PaGFa0P5tDTuzsc8-AED1YDE8Jw-umUdSfOSX9oEzkA0uUf7fwAxSl6Xlntj_SZchtu5gw8vphSWm3_Opza6mLywvrEKqBseyOMpfT2QdHP3HKymtGLmXYA=w2400" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Chicago, Illinois</h5>
+              <p class="card-text">Metallica finally returns to the big stage in Chicago Illinois</p>
+              <a href="#" class="btn btn-primary">Buy Tickets</a>
             </div>
           </div>
         </div>
         <!-- End card 2 -->
 
         <!-- Card 3 -->
-        <div class="cardContainer col-lg-3 col-md-3 col-sm-6">
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
           <div class="card">
-            <img src="images/3_card.png" class="card-img-top" alt="...">
+            <img src="https://lh3.googleusercontent.com/Aod9iVWkpPKhMmEz9O_RgEqiskjxKEY8knxCU9eZtFB3udhkBYHOT5ghoNyh9YbbKHTolgeMybfIlnlRIyuGI0MZrV44qMRbgRlVGCr3YpzXzUsB2TmOF5UUiUEFDACwWRcNOZNuTA=w2400" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Long Beach, California</h5>
+              <p class="card-text">The Red Hot Chili Peppers take stage at the Honda Center</p>
+              <a href="#" class="btn btn-primary">Buy Tickets</a>
             </div>
           </div>
         </div>
@@ -106,17 +109,18 @@
     <!-- End cards -->
 
     <!-- Content -->
-    <div class="container-fluid">
+    <div class="container-fluid content">
+      <h2 class="sectionHeading">Why we're better</h2>
 
       <!-- Row 1 -->
-      <div class="row">
+      <div class="row valueProp">
         <div class="sideAccent">
         </div>
-        <div class="col-3">
-          <img src="images/assistance.png">
+        <div class="col-3 imageContainer">
+          <img src="https://lh3.googleusercontent.com/zQuhM_06ecMEpwQ9Qj1JBk1RDRteCKRMg6PQte663pammkwgWE5X4TcWYy83BK7SS1FT4FYJ5AscvsVW5gDYAtGqUJ0nj2GGe-7xnQqVTjmscUCk2XUKrgh9KwuPA67cLAYgQTxT6A=s256-p-k">
         </div>
         <div class="col-8">
-          <h3>Title 1</h3>
+          <h3>We're always here to help!</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
           </p>
@@ -124,14 +128,46 @@
           </a>
         </div>
       </div>
-      <!-- End row 1 -->
+
+      <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="col-3 imageContainer">
+          <img src="https://lh3.googleusercontent.com/LkcTEAlFHZ_1qUSWunLUdE5e1bFTLQBsjgY-JitzA3u9chgw73XLLBCnaU_9Bh-z5pdR0MGWVo6xjGiZ2fATdwsulTAhorBHDZDhLaQktkKUgQaQU-EEcroUlOduexDd8njYNWOV3w=s256-p-k">
+        </div>
+        <div class="col-8">
+          <h3>The best prices!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">CLearn More
+          </a>
+        </div>
+      </div>
+
+      <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="col-3 imageContainer">
+          <img src="https://lh3.googleusercontent.com/GF4QCwh2Fyhv06Sxc99Y58rAjwdcLWupUwRwBZIuqE1ytDXs-3kcgYSYROxy6S3o1LDv-t9r6XxDawlvRvhDfHiTNlBMSMyHqXJwVF4x0tZ_MXjhuyBR4oZNPNbET9to59nkOSS6WQ=s256-p-k">
+        </div>
+        <div class="col-8">
+          <h3>The best shows!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">More Shows
+          </a>
+        </div>
+      </div>
 
     </div>
     <!-- End content -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="emailContain">
       <form>
+        <h3>Join OUr Mailing List</h3>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
